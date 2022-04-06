@@ -19,4 +19,10 @@ class SourceViewController: NSViewController, NSTableViewDelegate, NSTableViewDa
     return 100
   }
     
+  func tableView(_ tableView: NSTableView, viewFor tableColumn: NSTableColumn?, row: Int) -> NSView? {
+    guard let vw = tableView.makeView(withIdentifier: tableColumn!.identifier, owner: self) as? NSTableCellView else { return nil }
+    vw.textField?.stringValue = "Hello, world!"
+    
+    return vw
+  }
 }
