@@ -8,7 +8,8 @@
 import Cocoa
 
 class DetailViewController: NSViewController {
-
+  @IBOutlet var imageView: NSImageView!
+  
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do view setup here.

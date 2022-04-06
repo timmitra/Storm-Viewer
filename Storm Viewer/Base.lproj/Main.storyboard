@@ -800,6 +800,9 @@
                             </scrollView>
                         </subviews>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="WET-uO-ty2" id="WBp-2a-BRC"/>
+                    </connections>
                 </viewController>
                 <customObject id="gMP-g0-PNb" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -812,7 +815,17 @@
                     <view key="view" id="V6L-DK-Sc5">
                         <rect key="frame" x="0.0" y="0.0" width="270" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hBH-Ej-FRr">
+                                <rect key="frame" x="0.0" y="232" width="119" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="dmj-fB-HkS"/>
+                            </imageView>
+                        </subviews>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="hBH-Ej-FRr" id="86c-JF-qdu"/>
+                    </connections>
                 </viewController>
                 <customObject id="aO7-5N-tPT" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
