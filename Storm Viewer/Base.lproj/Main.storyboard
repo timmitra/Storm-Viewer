@@ -684,7 +684,7 @@
         <scene sceneID="R2V-B0-nI4">
             <objects>
                 <windowController id="B8D-0N-5wS" sceneMemberID="viewController">
-                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
+                    <window key="window" title="Storm Viewer" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
                         <rect key="contentRect" x="196" y="240" width="480" height="270"/>
@@ -816,12 +816,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="270" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hBH-Ej-FRr">
-                                <rect key="frame" x="0.0" y="232" width="119" height="68"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1" translatesAutoresizingMaskIntoConstraints="NO" id="hBH-Ej-FRr">
+                                <rect key="frame" x="0.0" y="0.0" width="270" height="300"/>
                                 <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="dmj-fB-HkS"/>
                             </imageView>
                         </subviews>
+                        <constraints>
+                            <constraint firstItem="hBH-Ej-FRr" firstAttribute="top" secondItem="V6L-DK-Sc5" secondAttribute="top" id="8qD-3O-Uml"/>
+                            <constraint firstAttribute="trailing" secondItem="hBH-Ej-FRr" secondAttribute="trailing" id="Fd1-b6-m0i"/>
+                            <constraint firstItem="hBH-Ej-FRr" firstAttribute="leading" secondItem="V6L-DK-Sc5" secondAttribute="leading" id="MYU-Yj-h4Q"/>
+                            <constraint firstAttribute="bottom" secondItem="hBH-Ej-FRr" secondAttribute="bottom" id="p6O-92-vTZ"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="imageView" destination="hBH-Ej-FRr" id="86c-JF-qdu"/>
